@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.parent-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: #fcfcfc;
+  position: relative;
+}
+
+.nav-bar-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 54px;
+  width: 100%;
+  position: fixed;
+  padding: 8 10px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.nav-bar-wrapper img {
+  height: 39px;
+  width: 103px;
+  cursor: pointer;
+}
+
+.nav-bar {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar .search input {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  background-color: #f8f8f8;
+}
+
+.nav-bar .search i {
+  position: absolute;
+  left: 50px;
+  top: 6px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 222px;
+  height: 22px;
+  align-items: center;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+/* Story slider */
+
+.story-wrapper {
+  display: flex;
+  width: 50%;
+  margin: 100px 40px 20px 150px;
+  height: 120px;
+  align-items: center;
+  padding: 8px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  /* margin-bottom: 20px; */
+  background-color: #ffffff;
+}
+
+.user-story-wrapper {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.story-wrapper i {
+  border: none;
+  color: #3d3d3d;
+  position: absolute;
+  right: 530px;
+  outline: none;
+  margin-bottom: 20px;
+}
+.user-story {
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.user-story img {
+  border: 1px solid #e63636;
+  border-radius: 50%;
+  height: 56px;
+  width: 56px;
+}
+
+.user-story p {
+  font-size: 12px;
+  color: #504f4f;
+}
+
+/* Post Section */
+
+.post-wrapper {
+  border: 1px solid #e5e5e5;
+  width: 50%;
+  background-color: #ffffff;
+  margin: 10px 40px 50px 150px;
+
+  /* margin-bottom: 10px; */
+}
+
+.post-header {
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-header .image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-header .user-loc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-header .user-loc p {
+  color: #262626;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+.post-header .user-loc span {
+  color: #262626;
+
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.post-header .image p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.post-header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-header .menu img {
+  height: 15px;
+  width: 15px;
+}
+
+.post-image img {
+  width: 100%;
+}
+
+.post-share {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-share img:hover {
+  cursor: pointer;
+}
+
+.post-share .post-icons:hover {
+  cursor: pointer;
+}
+
+.post-comment {
+  padding: 15px;
+}
+
+.post-comment strong {
+  font-size: 14px;
+  color: #2c2c2c;
+}
+
+.post-comment p {
+  font-size: 12px;
+  color: #444444;
+}
+
+.post-comment-wrapper .post-comment p strong:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.add-a-comment-wrapper {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-a-comment {
+  width: 100%;
+}
+
+.add-a-comment input {
+  padding: 20px;
+  width: 100%;
+  border: none;
+}
+
+.add-a-comment-wrapper button {
+  padding: 10px;
+  border: none;
+  color: rgb(0, 143, 143);
+  background-color: #ffffff;
+}
+
+.follow-section-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.follow-section-wrapper .user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.follow-section-wrapper .user-profile img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.follow-section-wrapper .user-profile p {
+  margin: 5px 0;
+  color: #808080;
+}
+
+.follow-section-wrapper button {
+  background-color: #ffffff;
+  border: none;
+  font-size: 12px;
+  color: rgb(0, 81, 255);
+}
+
+.follow-section-wrapper button:hover {
+  cursor: pointer;
+}
+
+.suggestions-for-you {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-transform: capitalize;
+  padding: 5px 20px;
+}
+
+.suggestions-for-you h4 {
+  color: #999999;
+}
+
+.suggestions-for-you button {
+  background-color: #ffffff;
+  border: none;
+  font-size: 12px;
+  color: #2c2c2c;
+  font-weight: 700;
+}
+
+.suggestions-for-you button:hover {
+  cursor: pointer;
+}
+
+.follow-users-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 280px;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.follow-users-wrapper .follow-users {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: space-between;
+}
+
+.follow-users-wrapper .follow-users img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.follow-users-wrapper .follow-users img:hover {
+  cursor: pointer;
+}
+
+.follow-users-wrapper .follow-users strong {
+  font-size: 14px;
+}
+
+.follow-users-wrapper .follow-users strong:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.follow-users-wrapper .follow-users p {
+  margin: 5px 0;
+  color: #929292;
+  font-size: 12px;
+}
+
+.follow-users-wrapper button {
+  border: none;
+  background-color: #ffffff;
+  color: rgb(0, 81, 255);
+}
+
+.follow-users-wrapper button:hover {
+  cursor: pointer;
+}
+
+.follow-users-wrapper .follow-users .user-detail {
+  display: flex;
+  align-items: center;
+}
+
+.suggestion-wrapper {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 110px 40px 20px 900px;
+  position: fixed;
+}
